@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor</title>
+</head>
+<body>
+
+    <di class="container">
+        <div class="inputContainer">
+            <input type="text" maxlength="20" placeholder="(dec)" onchange="converter(this.value)">
+        </div>
+        <div class="outputContainer">
+            <h1 id="resultado">0</h1>
+        </div>
+        <div class="design">
+            <p>DESIGN BY: @euvncius</p>
+        </div>
+    </di>
+
+    <script>
+
+        function converter(numero){
+            let decimal = parseInt(numero)
+            let binario = decimal.toString(2)
+
+            document.getElementById("resultado").innerText=binario
+        }
+
+    </script>
+</body>
+</html>
